@@ -1,0 +1,44 @@
+#include<stdio.h>
+void main()
+{
+ int x,y,z;
+ scanf("%d",&y);
+ for(;;)
+ {
+  scanf("%d",&z);
+  
+  if(y==z)
+  continue;
+  if(y>z)
+  {
+   x=z;
+   z=y;
+   y=x;
+  break; 
+  }
+   break;
+     
+ }
+  for(;;)
+  {
+    scanf("%d",&x);
+    if(x==-1)
+    break;
+    if(x>z)
+    {
+      y=z;
+      z=x;
+      continue;
+    }
+    if(x>y)
+    {
+      if(x==z) 
+      { 
+        continue;
+      }
+      else y=x;
+    }
+  }
+    
+  printf("%d",y);
+}
